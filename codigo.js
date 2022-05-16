@@ -10,8 +10,10 @@ function separandoPalavras() {
     var contador = 0;
     var concatenadorDeLetras = '';
 
+
+
     for (let i = 0; i < palavra.length; i++) {
-        //Contador para juntar as palavras concatenadas
+        //Contador para juntar as palavras concatenadas  thainara / flor  => thai nara 
         if (contador < chave.length) {
             concatenadorDeLetras = concatenadorDeLetras + palavra[i];
             contador = contador + 1;
@@ -57,7 +59,7 @@ function criptografiaDePonta() {
     for (let i = 0; i < palavrasDivididas.length; i++) { //percorrer amor fofa linda
         var palavra = palavrasDivididas[i];
 
-        for (let x = 0; x < palavra.length; x++) { //percorrer a m o r
+        for (let x = 0; x < palavra.length; x++) { //percorrer a m o r 
             var posicaoPalavra = alfabeto.indexOf(palavra[x]);
             console.log(palavra[x], alfabeto, posicaoPalavra);
             var soma = posicaoPalavra + posicoesChave[x];
