@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Polialfabetico</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="caixa-texto">
+            <h1 style="color: white;">Cifra Polialfabética</h1>
+            <input type="text" name="" id="palavra" placeholder="Informe a palavra">
+            <input type="text" name="" id="chave" placeholder="Informe a chave">
+        </div>
+        <div id="botoes">
+            <button id="btn-cifrar" onClick={criptografiaDePonta()}>Cifrar</button>
+            <button id="btn-descifrar" onClick={descriptografiaDePonta()}>Descifrar</button>
+        </div>
+        <textarea id="respostaTexto" cols="56" rows="4"></textarea>
+    </div>
+
+    <script src="codigo.js"></script>
+
+</body>
+
+</html>
